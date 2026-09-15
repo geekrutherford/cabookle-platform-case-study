@@ -1,0 +1,7 @@
+flowchart TD
+    PUSH["Push / PR to main"] --> BUILD["Restore + build (.NET)"]
+    BUILD --> PACK["Pack identity package"]
+    PACK --> PUBLISH["Publish package to registry"]
+    PUSH --> SAST["SAST (Semgrep)"]
+    PUSH --> SECRETS["Secret scan (GitLeaks)"]
+    SCHEDULE["Scheduled"] --> DEPS["Dependency updates (Dependabot)"]

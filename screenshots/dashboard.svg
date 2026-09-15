@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect width="960" height="600" fill="#F4F7FA"/>
+
+  <!-- Browser chrome -->
+  <rect x="0" y="0" width="960" height="44" fill="#ffffff"/>
+  <circle cx="28" cy="22" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="22" r="6" fill="#febc2e"/>
+  <circle cx="68" cy="22" r="6" fill="#28c840"/>
+  <rect x="100" y="12" width="760" height="20" rx="10" fill="#F1F3F5" stroke="#E3E7EB"/>
+  <text x="480" y="26" text-anchor="middle" font-size="12" fill="#888">cabookle.com</text>
+
+  <!-- Top nav -->
+  <rect x="0" y="44" width="960" height="56" fill="#ffffff" stroke="#E3E7EB"/>
+  <text x="40" y="78" font-size="20" font-weight="700" fill="#4F6686">Cabookle</text>
+  <text x="640" y="78" font-size="14" fill="#555">Library</text>
+  <text x="716" y="78" font-size="14" fill="#555">Flow</text>
+  <text x="776" y="78" font-size="14" fill="#555">Budget</text>
+  <rect x="840" y="58" width="88" height="30" rx="6" fill="#617A9B"/>
+  <text x="884" y="78" text-anchor="middle" font-size="13" fill="#ffffff">Sign in</text>
+
+  <!-- Welcome banner -->
+  <rect x="40" y="124" width="880" height="120" rx="12" fill="#E9EEF5"/>
+  <text x="72" y="164" font-size="22" font-weight="700" fill="#333">Meadowbrook Middle School Library</text>
+  <text x="72" y="196" font-size="15" fill="#555">One account. Every Cabookle tool. Manage your collection, school year, and budget in one place.</text>
+  <rect x="72" y="212" width="160" height="22" rx="11" fill="#617A9B"/>
+  <text x="152" y="228" text-anchor="middle" font-size="12" fill="#ffffff">Sample account — demo data</text>
+
+  <!-- Product cards -->
+  <rect x="40" y="272" width="280" height="260" rx="12" fill="#ffffff" stroke="#E3E7EB"/>
+  <circle cx="80" cy="312" r="18" fill="#EBF7F4"/>
+  <text x="80" y="318" text-anchor="middle" font-size="18" fill="#2A9D8F">L</text>
+  <text x="112" y="318" font-size="17" font-weight="700" fill="#2A9D8F">Cabookle Library</text>
+  <text x="64" y="360" font-size="13" fill="#555">Catalog 1,240 titles, track circulation, and help students find their next read with Smart Search.</text>
+  <rect x="64" y="400" width="120" height="22" rx="11" fill="#F1F3F5"/>
+  <text x="124" y="415" text-anchor="middle" font-size="11" fill="#666">1,240 books</text>
+  <rect x="192" y="400" width="104" height="22" rx="11" fill="#F1F3F5"/>
+  <text x="244" y="415" text-anchor="middle" font-size="11" fill="#666">86 checked out</text>
+
+  <rect x="340" y="272" width="280" height="260" rx="12" fill="#ffffff" stroke="#E3E7EB"/>
+  <circle cx="380" cy="312" r="18" fill="#EEF0F6"/>
+  <text x="380" y="318" text-anchor="middle" font-size="18" fill="#4F6686">F</text>
+  <text x="412" y="318" font-size="17" font-weight="700" fill="#4F6686">Cabookle Flow</text>
+  <text x="364" y="360" font-size="13" fill="#555">Plan the school year: recurring tasks, displays, events, and contacts that roll forward.</text>
+  <rect x="364" y="400" width="120" height="22" rx="11" fill="#F1F3F5"/>
+  <text x="424" y="415" text-anchor="middle" font-size="11" fill="#666">42 tasks</text>
+  <rect x="492" y="400" width="104" height="22" rx="11" fill="#F1F3F5"/>
+  <text x="544" y="415" text-anchor="middle" font-size="11" fill="#666">12 displays</text>
+
+  <rect x="640" y="272" width="280" height="260" rx="12" fill="#ffffff" stroke="#E3E7EB"/>
+  <circle cx="680" cy="312" r="18" fill="#FDF3E7"/>
+  <text x="680" y="318" text-anchor="middle" font-size="18" fill="#E76F51">B</text>
+  <text x="712" y="318" font-size="17" font-weight="700" fill="#E76F51">Cabookle Budget</text>
+  <text x="664" y="360" font-size="13" fill="#555">Track funding, planned purchases, orders, and receipts across the budget year.</text>
+  <rect x="664" y="400" width="120" height="22" rx="11" fill="#F1F3F5"/>
+  <text x="724" y="415" text-anchor="middle" font-size="11" fill="#666">$8,400 funded</text>
+  <rect x="792" y="400" width="104" height="22" rx="11" fill="#F1F3F5"/>
+  <text x="844" y="415" text-anchor="middle" font-size="11" fill="#666">$2,150 spent</text>
+
+  <!-- Footer note -->
+  <text x="480" y="572" text-anchor="middle" font-size="11" fill="#999">Synthetic mockup — all names and figures are illustrative.</text>
+</svg>

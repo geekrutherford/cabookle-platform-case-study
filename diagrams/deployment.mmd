@@ -1,0 +1,12 @@
+flowchart LR
+    subgraph Edge["Managed platform (TLS terminated at edge)"]
+        API["API service<br/>(containerized ASP.NET Core)"]
+        WEB["Web app service<br/>(static Svelte SPA)"]
+    end
+    DB[("Managed MySQL")]
+    EMAIL["Email provider"]
+
+    Browser -->|"HTTPS"| API
+    Browser -->|"HTTPS"| WEB
+    API --> DB
+    API --> EMAIL

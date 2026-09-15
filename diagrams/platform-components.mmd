@@ -1,0 +1,14 @@
+flowchart TB
+    subgraph Platform["Cabookle Platform"]
+        direction TB
+        API["Platform API<br/>(ASP.NET Core)"]
+        WEB["Platform Web<br/>(Svelte 5 SPA)"]
+        WORKER["Background Worker<br/>(.NET Worker)"]
+        IDENTITY["Identity library<br/>(EF Core entities & services)"]
+        DB[("MySQL")]
+    end
+
+    WEB -->|"HTTP (JWT / session cookie)"| API
+    API --> IDENTITY
+    WORKER --> IDENTITY
+    IDENTITY --> DB

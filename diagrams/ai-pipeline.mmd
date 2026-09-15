@@ -1,0 +1,7 @@
+flowchart LR
+    Q["User query<br/>(plain language)"] --> INT["Intent & query<br/>interpretation"]
+    INT --> RET["Retrieval<br/>(scoped to the org's collection)"]
+    RET --> GROUND["Grounded context"]
+    GROUND --> GEN["Grounded answer /<br/>ranked results"]
+    GEN --> OUT["Response"]
+    ORG[("Organization's<br/>own data")] --> RET

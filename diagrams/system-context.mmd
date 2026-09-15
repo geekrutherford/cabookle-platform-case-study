@@ -1,0 +1,43 @@
+flowchart LR
+    subgraph People
+        LIBRARIAN["School librarians"]
+        TEACHER["Teachers"]
+        STUDENT["Students"]
+    end
+
+    subgraph Products["Cabookle products"]
+        LIB["Library"]
+        FLOW["Flow"]
+        BUD["Budget"]
+    end
+
+    subgraph Platform["Cabookle Platform"]
+        API["Platform API"]
+        SPA["Platform web app"]
+        WORKER["Background worker"]
+        DB[("MySQL")]
+    end
+
+    subgraph External["External services"]
+        EMAIL["Email provider"]
+        CAPTCHA["Bot protection (reCAPTCHA)"]
+        CATALOG["Book metadata catalog"]
+    end
+
+    LIBRARIAN --> LIB
+    LIBRARIAN --> FLOW
+    LIBRARIAN --> BUD
+    TEACHER --> LIB
+    TEACHER --> FLOW
+    STUDENT --> LIB
+
+    LIB --> API
+    FLOW --> API
+    BUD --> API
+    SPA --> API
+
+    API --> DB
+    WORKER --> DB
+    API --> EMAIL
+    API --> CAPTCHA
+    LIB --> CATALOG

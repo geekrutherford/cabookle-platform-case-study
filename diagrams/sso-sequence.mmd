@@ -1,0 +1,24 @@
+sequenceDiagram
+    autonumber
+    participant U as User (browser)
+    participant P as Product (e.g. Library)
+    participant API as Platform API
+    participant DB as MySQL
+    participant M as Email provider
+
+    U->>P: Open product
+    P->>API: GET /session (cookie sent automatically)
+    API->>DB: Validate server-side session
+    alt valid session
+        API-->>P: Short-lived JWT
+        P-->>U: Signed-in experience
+    else no/invalid session
+        P->>P: Redirect to platform login
+    end
+
+    Note over P,API: Later: product needs to send email
+    P->>API: POST /email/send (X-Internal-Key)
+    API->>DB: Enqueue outbox message
+    API-->>P: 202 Accepted
+    Note over DB,M: Worker delivers asynchronously
+    DB-->>M: Deliver + retry on failure

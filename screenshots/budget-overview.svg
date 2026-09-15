@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect width="960" height="600" fill="#F4F7FA"/>
+
+  <rect x="0" y="0" width="960" height="44" fill="#ffffff"/>
+  <circle cx="28" cy="22" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="22" r="6" fill="#febc2e"/>
+  <circle cx="68" cy="22" r="6" fill="#28c840"/>
+  <rect x="100" y="12" width="760" height="20" rx="10" fill="#F1F3F5"/>
+
+  <text x="40" y="92" font-size="24" font-weight="700" fill="#E76F51">Cabookle Budget — 2025–2026</text>
+  <text x="40" y="118" font-size="14" fill="#555">Funded, allocated, committed, and spent — all scoped to one budget year.</text>
+
+  <!-- Funding sources -->
+  <rect x="40" y="140" width="440" height="200" rx="10" fill="#ffffff" stroke="#E3E7EB"/>
+  <text x="64" y="168" font-size="14" font-weight="700" fill="#333">Funding sources</text>
+  <text x="64" y="196" font-size="13" fill="#555">District allocation</text>
+  <text x="420" y="196" text-anchor="end" font-size="13" fill="#333">$5,000</text>
+  <text x="64" y="224" font-size="13" fill="#555">Book fair proceeds</text>
+  <text x="420" y="224" text-anchor="end" font-size="13" fill="#333">$1,800</text>
+  <text x="64" y="252" font-size="13" fill="#555">PTA grant</text>
+  <text x="420" y="252" text-anchor="end" font-size="13" fill="#333">$1,000</text>
+  <text x="64" y="280" font-size="13" fill="#555">Donations</text>
+  <text x="420" y="280" text-anchor="end" font-size="13" fill="#333">$600</text>
+  <rect x="64" y="300" width="392" height="1" fill="#E3E7EB"/>
+  <text x="64" y="322" font-size="13" font-weight="700" fill="#333">Total funded</text>
+  <text x="420" y="322" text-anchor="end" font-size="13" font-weight="700" fill="#2A9D8F">$8,400</text>
+
+  <!-- Spend breakdown bars -->
+  <rect x="500" y="140" width="420" height="200" rx="10" fill="#ffffff" stroke="#E3E7EB"/>
+  <text x="524" y="168" font-size="14" font-weight="700" fill="#333">Spend breakdown</text>
+
+  <text x="524" y="200" font-size="12" fill="#555">Funded</text>
+  <rect x="600" y="190" width="296" height="12" rx="6" fill="#B7A6D9"/>
+
+  <text x="524" y="232" font-size="12" fill="#555">Allocated</text>
+  <rect x="600" y="222" width="248" height="12" rx="6" fill="#4F6686"/>
+
+  <text x="524" y="264" font-size="12" fill="#555">Committed</text>
+  <rect x="600" y="254" width="132" height="12" rx="6" fill="#E9A23B"/>
+
+  <text x="524" y="296" font-size="12" fill="#555">Spent</text>
+  <rect x="600" y="286" width="76" height="12" rx="6" fill="#E76F51"/>
+
+  <text x="524" y="326" font-size="12" fill="#555">Remaining</text>
+  <text x="876" y="326" text-anchor="end" font-size="13" font-weight="700" fill="#2A9D8F">$6,250</text>
+
+  <!-- Bottom cards -->
+  <rect x="40" y="360" width="280" height="120" rx="10" fill="#ffffff" stroke="#E3E7EB"/>
+  <text x="64" y="392" font-size="12" fill="#888">Planned purchases</text>
+  <text x="64" y="424" font-size="26" font-weight="700" fill="#333">$3,100</text>
+  <text x="64" y="450" font-size="12" fill="#888">14 items awaiting order</text>
+
+  <rect x="340" y="360" width="280" height="120" rx="10" fill="#ffffff" stroke="#E3E7EB"/>
+  <text x="364" y="392" font-size="12" fill="#888">Open vendor orders</text>
+  <text x="364" y="424" font-size="26" font-weight="700" fill="#333">3</text>
+  <text x="364" y="450" font-size="12" fill="#888">1 received, 2 in transit</text>
+
+  <rect x="640" y="360" width="280" height="120" rx="10" fill="#ffffff" stroke="#E3E7EB"/>
+  <text x="664" y="392" font-size="12" fill="#888">Estimate vs. actual</text>
+  <text x="664" y="424" font-size="26" font-weight="700" fill="#333">$2,150 / $2,090</text>
+  <text x="664" y="450" font-size="12" fill="#888">Actual spend is 2.8% under estimate</text>
+
+  <text x="480" y="572" text-anchor="middle" font-size="11" fill="#999">Synthetic mockup — all figures are illustrative.</text>
+</svg>

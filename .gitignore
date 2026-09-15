@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Node (in case diagrams are ever rendered with mermaid-cli)
+node_modules/
+
+# Local scratch
+*.log
