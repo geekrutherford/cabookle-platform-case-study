@@ -15,36 +15,36 @@ Cabookle uses a **shared-database, shared-schema** model where every row is scop
 
 ```mermaid
 erDiagram
-    ORGANIZATION ||--o{ ORGANIZATION_MEMBERSHIP : "has"
-    PLATFORM_USER ||--o{ ORGANIZATION_MEMBERSHIP : "belongs to"
-    ORGANIZATION ||--o{ PRODUCT_ENTITLEMENT : "is entitled to"
-    PRODUCT ||--o{ PRODUCT_ENTITLEMENT : "grants access to"
+    ORGANIZATION ||--o{ ORGANIZATION_MEMBERSHIP : has
+    PLATFORM_USER ||--o{ ORGANIZATION_MEMBERSHIP : joins
+    ORGANIZATION ||--o{ PRODUCT_ENTITLEMENT : entitles
+    PRODUCT ||--o{ PRODUCT_ENTITLEMENT : grants
 
     ORGANIZATION {
         string name
         string slug
-        bool is_active
+        boolean is_active
     }
     PLATFORM_USER {
         string email
         string first_name
         string last_name
-        bool is_active
-        bool email_verified
+        boolean is_active
+        boolean email_verified
     }
     ORGANIZATION_MEMBERSHIP {
-        role
-        bool is_active
-        bool is_default
+        string role
+        boolean is_active
+        boolean is_default
     }
     PRODUCT {
         string code
         string name
-        bool is_active
+        boolean is_active
     }
     PRODUCT_ENTITLEMENT {
-        bool is_active
-        datetime expires_at
+        boolean is_active
+        string expires_at
     }
 ```
 
