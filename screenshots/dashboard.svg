@@ -30,7 +30,11 @@
   <circle cx="80" cy="312" r="18" fill="#EBF7F4"/>
   <text x="80" y="318" text-anchor="middle" font-size="18" fill="#2A9D8F">L</text>
   <text x="112" y="318" font-size="17" font-weight="700" fill="#2A9D8F">Cabookle Library</text>
-  <text x="64" y="360" font-size="13" fill="#555">Catalog 1,240 titles, track circulation, and help students find their next read with Smart Search.</text>
+  <text x="64" y="356" font-size="13" fill="#555">
+    <tspan x="64">Catalog 1,240 titles, track</tspan>
+    <tspan x="64" dy="16">circulation, and help students</tspan>
+    <tspan x="64" dy="16">find their next read.</tspan>
+  </text>
   <rect x="64" y="400" width="120" height="22" rx="11" fill="#F1F3F5"/>
   <text x="124" y="415" text-anchor="middle" font-size="11" fill="#666">1,240 books</text>
   <rect x="192" y="400" width="104" height="22" rx="11" fill="#F1F3F5"/>
@@ -40,7 +44,11 @@
   <circle cx="380" cy="312" r="18" fill="#EEF0F6"/>
   <text x="380" y="318" text-anchor="middle" font-size="18" fill="#4F6686">F</text>
   <text x="412" y="318" font-size="17" font-weight="700" fill="#4F6686">Cabookle Flow</text>
-  <text x="364" y="360" font-size="13" fill="#555">Plan the school year: recurring tasks, displays, events, and contacts that roll forward.</text>
+  <text x="364" y="356" font-size="13" fill="#555">
+    <tspan x="364">Plan the school year: recurring</tspan>
+    <tspan x="364" dy="16">tasks, displays, events, and</tspan>
+    <tspan x="364" dy="16">contacts that roll forward.</tspan>
+  </text>
   <rect x="364" y="400" width="120" height="22" rx="11" fill="#F1F3F5"/>
   <text x="424" y="415" text-anchor="middle" font-size="11" fill="#666">42 tasks</text>
   <rect x="492" y="400" width="104" height="22" rx="11" fill="#F1F3F5"/>
@@ -50,7 +58,11 @@
   <circle cx="680" cy="312" r="18" fill="#FDF3E7"/>
   <text x="680" y="318" text-anchor="middle" font-size="18" fill="#E76F51">B</text>
   <text x="712" y="318" font-size="17" font-weight="700" fill="#E76F51">Cabookle Budget</text>
-  <text x="664" y="360" font-size="13" fill="#555">Track funding, planned purchases, orders, and receipts across the budget year.</text>
+  <text x="664" y="356" font-size="13" fill="#555">
+    <tspan x="664">Track funding, planned purchases,</tspan>
+    <tspan x="664" dy="16">orders, and receipts across the</tspan>
+    <tspan x="664" dy="16">budget year.</tspan>
+  </text>
   <rect x="664" y="400" width="120" height="22" rx="11" fill="#F1F3F5"/>
   <text x="724" y="415" text-anchor="middle" font-size="11" fill="#666">$8,400 funded</text>
   <rect x="792" y="400" width="104" height="22" rx="11" fill="#F1F3F5"/>
