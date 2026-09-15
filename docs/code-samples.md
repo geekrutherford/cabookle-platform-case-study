@@ -1,7 +1,7 @@
 # Code Samples
 
 These are **small, rewritten, illustrative** snippets that demonstrate the ideas behind the platform.
-They are simplified and deliberately not the production code — but each one captures a real pattern
+They are simplified and deliberately not the production code, but each one captures a real pattern
 described elsewhere in this case study.
 
 Samples are shown in C# (backend) and TypeScript (frontend) to match the stack.
@@ -25,7 +25,7 @@ public static class TenantScopedQuery
     }
 }
 
-// Usage — a query can only ever see the caller's own books.
+// Usage: a query can only ever see the caller's own books.
 var myBooks = db.Books
     .ForOrganization(currentOrganizationId)
     .Where(b => b.CheckedOut)
@@ -147,7 +147,7 @@ export async function establishSession(): Promise<Session | null> {
     // credentials: 'include' ensures the HttpOnly session cookie is sent.
     const response = await api.get<Session>('/session', { withCredentials: true });
 
-    // A fresh, short-lived JWT comes back in the body — never in the URL.
+    // A fresh, short-lived JWT comes back in the body, never in the URL.
     setToken(response.data.token);
     setUser(response.data.user);
     return response.data;

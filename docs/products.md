@@ -11,17 +11,17 @@ describes what each product does and the audience it serves.
 ## Cabookle Library
 
 **For classroom collections and smaller school libraries.** Library keeps the day-to-day work of a
-small library — cataloging, circulation, and helping students find their next book — simple enough
+small library, cataloging, circulation, and helping students find their next book, simple enough
 that a teacher can run it without dedicated training or IT support.
 
 ### Core capabilities
 
 - **ISBN cataloging.** Scan or type an ISBN and the title, author, cover, and metadata are pulled in
-  automatically from book catalogs — no manual data entry.
+  automatically from book catalogs, no manual data entry.
 - **Circulation tracking.** Students check books in and out; staff can see at a glance what's out,
   who has it, how long it's been gone, and who's over their checkout limit.
 - **Overdue notices & parent alerts.** Print overdue notices or email parents when books are due;
-  reading-history reports support parent–teacher conferences.
+  reading-history reports support parent-teacher conferences.
 - **Interoperability.** Export the collection in formats designed to drop into third-party reading
   tools, so nothing has to be re-entered.
 - **AI-assisted discovery.** Students search in plain language and get answers grounded in the books
@@ -32,7 +32,7 @@ that a teacher can run it without dedicated training or IT support.
 ## Cabookle Flow
 
 **For teachers and school librarians organizing the school year.** Flow is a workspace built around
-the recurring rhythm of a school year — not a generic task manager.
+the recurring rhythm of a school year, not a generic task manager.
 
 ### Core capabilities
 
@@ -52,7 +52,7 @@ the recurring rhythm of a school year — not a generic task manager.
 ## Cabookle Budget
 
 **For school librarians planning and tracking library spending.** Budget models the real purchasing
-cycle — plan, commit, order, receive, report — across a complete budget year.
+cycle, plan, commit, order, receive, report, across a complete budget year.
 
 ### Core capabilities
 
@@ -75,13 +75,13 @@ cycle — plan, commit, order, receive, report — across a complete budget year
 Every product above is backed by the **Cabookle Platform**, which provides the shared, cross-cutting
 capabilities the products don't re-implement themselves:
 
-- **Identity & authentication** — registration, email verification, credential login, and account
+- **Identity & authentication**: registration, email verification, credential login, and account
   recovery.
-- **Single sign-on** — a shared session cookie that lets users move between products without
+- **Single sign-on**: a shared session cookie that lets users move between products without
   re-entering credentials.
-- **Organizations & entitlements** — automatic provisioning of an organization and product
+- **Organizations & entitlements**: automatic provisioning of an organization and product
   entitlements when a user verifies their account.
-- **Transactional email** — verification, password reset, and product-triggered email, all delivered
+- **Transactional email**: verification, password reset, and product-triggered email, all delivered
   through one reliable relay.
 
 The platform is covered in depth in [Architecture](architecture.md),

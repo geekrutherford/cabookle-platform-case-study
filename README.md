@@ -1,7 +1,7 @@
-# Cabookle — Platform Case Study
+# Cabookle: Platform Case Study
 
-> A public, read-only case study of the engineering behind **Cabookle** — a suite of free tools for
-> teachers and school librarians — and the shared identity, authentication, and communication
+> A public, read-only case study of the engineering behind **Cabookle** (a suite of free tools for
+> teachers and school librarians) and the shared identity, authentication, and communication
 > platform that ties them together.
 >
 > ⚠️ **This is a case study, not the production codebase.** Everything here was written from scratch
@@ -17,8 +17,8 @@ single free account:
 
 | Product | What it does | Who it's for |
 |---|---|---|
-| **Cabookle Library** | Catalog books by ISBN, track circulation and overdues, and help students discover what to read next — with AI-powered Smart Search and plain-English insights. | Teachers & school librarians running classroom collections and smaller school libraries |
-| **Cabookle Flow** | A school-year-aware workspace for recurring tasks, templates, projects, events, book displays, and contacts — with automatic year-to-year rollover. | Teachers & school librarians |
+| **Cabookle Library** | Catalog books by ISBN, track circulation and overdues, and help students discover what to read next, with AI-powered Smart Search and plain-English insights. | Teachers & school librarians running classroom collections and smaller school libraries |
+| **Cabookle Flow** | A school-year-aware workspace for recurring tasks, templates, projects, events, book displays, and contacts, with automatic year-to-year rollover. | Teachers & school librarians |
 | **Cabookle Budget** | Plan and track library spending across a full budget year: funding sources, allocations, planned purchases, vendor orders, receipts, and reports. | School librarians |
 
 All three products are backed by a shared **Cabookle Platform** that owns identity, single sign-on,
@@ -50,7 +50,7 @@ flowchart LR
 ## Why this repository exists
 
 This repository is a **portfolio piece**. It documents how a small, production-grade, multi-product
-SaaS platform was designed and operated — the architecture, the hard problems, and the decisions —
+SaaS platform was designed and operated (the architecture, the hard problems, and the decisions)
 without exposing the private repositories, real users, or security-sensitive implementation details.
 
 ## What you'll find here
@@ -68,18 +68,18 @@ without exposing the private repositories, real users, or security-sensitive imp
 | [Code samples](docs/code-samples.md) | Small, rewritten snippets that illustrate the ideas |
 | [Operations](docs/operations.md) | CI/CD, monitoring, and production-support approach |
 
-Diagrams are authored as [Mermaid](https://mermaid.js.org) — view them inline in the markdown or edit
+Diagrams are authored as [Mermaid](https://mermaid.js.org), view them inline in the markdown or edit
 the sources in [`diagrams/`](diagrams/). Synthetic UI mockups live in [`screenshots/`](screenshots/).
 
 ## Technology at a glance
 
-- **Backend** — .NET 8, ASP.NET Core, EF Core (MySQL via Pomelo)
-- **Data** — MySQL
-- **Email** — Resend
-- **Frontend** — Svelte 5 + Vite + Tailwind CSS
-- **Auth** — JWT (shared secret) + server-side sessions with an HttpOnly cookie
-- **CI/CD & security** — GitHub Actions (NuGet publish, Semgrep SAST, GitLeaks secret scan, Dependabot)
-- **Hosting** — Railway
+- **Backend**: .NET 8, ASP.NET Core, EF Core (MySQL via Pomelo)
+- **Data**: MySQL
+- **Email**: Resend
+- **Frontend**: Svelte 5 + Vite + Tailwind CSS
+- **Auth**: JWT (shared secret) + server-side sessions with an HttpOnly cookie
+- **CI/CD & security**: GitHub Actions (NuGet publish, Semgrep SAST, GitLeaks secret scan, Dependabot)
+- **Hosting**: Railway
 
 See [Technology stack](docs/tech-stack.md) for the full rationale.
 
@@ -89,7 +89,7 @@ See [Technology stack](docs/tech-stack.md) for the full rationale.
    entitlements to Library, Flow, and Budget automatically.
 2. Signing in sets a single HttpOnly session cookie on the shared domain, so every product can silently
    validate the session and move the user between products without re-entering credentials.
-3. Product services never send email themselves — they hand messages to the platform, which queues them
+3. Product services never send email themselves; they hand messages to the platform, which queues them
    in an outbox and delivers them reliably with retries.
 
 For the full picture, start with the [Architecture](docs/architecture.md) document.

@@ -40,7 +40,7 @@ flowchart LR
 - **Two build paths, one approach.** The API uses a multi-stage Dockerfile (or nixpacks) to produce a
   small runtime image; the worker shares the same build strategy.
 - **Secrets via environment.** JWT signing key, email API key, database connection string, and
-  internal service keys are all injected as environment variables — nothing secret lives in the repo.
+  internal service keys are all injected as environment variables; nothing secret lives in the repo.
 - **Shared cookie domain.** The session cookie is scoped to the parent domain, so every product
   subdomain can share a single session automatically.
 
@@ -74,4 +74,4 @@ flowchart TD
 - **Publishing as a package** means the identity library can be consumed by other services without
   copying code.
 - **Secret scanning + SAST + dependency updates** run automatically so security hygiene isn't a manual
-  chore — important when the code is a public showcase.
+  chore, important when the code is a public showcase.

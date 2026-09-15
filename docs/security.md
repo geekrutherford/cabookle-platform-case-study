@@ -1,7 +1,7 @@
 # Authentication & Security Overview
 
 This document describes the authentication and security posture of the Cabookle platform **at a high
-level only**. It deliberately omits anything that would be useful to an attacker — no token formats,
+level only**. It deliberately omits anything that would be useful to an attacker, no token formats,
 no hashing parameters, no thresholds, no key material, no implementation specifics.
 
 ---
@@ -25,7 +25,7 @@ The same one-time, expiring-token pattern is used for password resets.
 
 - On successful sign-in, the platform creates a **server-side session** and sets an **HttpOnly,
   Secure, SameSite** cookie scoped to the shared parent domain, containing only an opaque session id.
-- The session has a bounded lifetime and **sliding expiration** — it is only extended on activity, and
+- The session has a bounded lifetime and **sliding expiration**: it is only extended on activity, and
   only once more than half its lifetime has elapsed.
 - The platform validates the session server-side and returns a **fresh, short-lived JWT** on each
   request. No token ever travels in a URL.

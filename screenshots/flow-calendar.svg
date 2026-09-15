@@ -7,7 +7,7 @@
   <circle cx="68" cy="22" r="6" fill="#28c840"/>
   <rect x="100" y="12" width="760" height="20" rx="10" fill="#F1F3F5"/>
 
-  <text x="40" y="92" font-size="24" font-weight="700" fill="#4F6686">Cabookle Flow — August</text>
+  <text x="40" y="92" font-size="24" font-weight="700" fill="#4F6686">Cabookle Flow: August</text>
   <text x="40" y="118" font-size="14" fill="#555">A color-coded month at a glance. Each color is a category of recurring work.</text>
 
   <!-- Legend -->
@@ -82,5 +82,5 @@
   <text x="92" y="486" font-size="13" fill="#333">Photograph the new display</text>
   <text x="92" y="504" font-size="11" fill="#888">Aug 10 · Display · Carries forward on rollover</text>
 
-  <text x="480" y="572" text-anchor="middle" font-size="11" fill="#999">Synthetic mockup — all names, dates, and tasks are illustrative.</text>
+  <text x="480" y="572" text-anchor="middle" font-size="11" fill="#999">Synthetic mockup, all names, dates, and tasks are illustrative.</text>
 </svg>

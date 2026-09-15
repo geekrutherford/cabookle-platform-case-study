@@ -18,7 +18,7 @@ id everywhere. The pattern is encoded in a shared query guard (see [code samples
 so it isn't left to each developer to remember.
 
 **Trade-off.** Shared-database scoping keeps operations simple (one schema, one backup, instant
-signup) but moves the isolation guarantee into application code — which is exactly why the guard is a
+signup) but moves the isolation guarantee into application code, which is exactly why the guard is a
 first-class abstraction rather than a convention.
 
 ---
@@ -36,7 +36,7 @@ them, and never pass a token in a URL (which leaks into logs and browser history
 - On each call, the platform validates the session and issues a **fresh, short-lived JWT** the products
   use for API access.
 
-**Trade-off.** Server-side sessions mean a database lookup per session validation — accepted in
+**Trade-off.** Server-side sessions mean a database lookup per session validation, accepted in
 exchange for instant revocation and centralized lifetime control.
 
 ---
@@ -83,7 +83,7 @@ in an emergency without redeploying.
 
 ## 6. Secret hygiene in CI
 
-**Problem.** Secrets and vulnerabilities can slip into a repository over time — and a public-facing
+**Problem.** Secrets and vulnerabilities can slip into a repository over time, and a public-facing
 profile must be able to prove the house is in order.
 
 **Approach.** Automated, always-on checks in CI: **secret scanning** on every push/PR, **SAST** static
@@ -110,5 +110,5 @@ recommend a book the library doesn't own, and must never see another tenant's da
 retrieval is **scoped to the organization first**, and generation is constrained to the retrieved
 context. Deterministic queries take a direct path, keeping the generative step off the hot path.
 
-**Trade-off.** The grounding constraint is more engineering than a naive "just ask the model" approach
-— but it's what makes the feature trustworthy.
+**Trade-off.** The grounding constraint is more engineering than a naive "just ask the model" approach,
+but it's what makes the feature trustworthy.

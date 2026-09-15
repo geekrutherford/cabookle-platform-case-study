@@ -7,8 +7,8 @@
   <circle cx="68" cy="22" r="6" fill="#28c840"/>
   <rect x="100" y="12" width="760" height="20" rx="10" fill="#F1F3F5"/>
 
-  <text x="40" y="92" font-size="24" font-weight="700" fill="#E76F51">Cabookle Budget — 2025–2026</text>
-  <text x="40" y="118" font-size="14" fill="#555">Funded, allocated, committed, and spent — all scoped to one budget year.</text>
+  <text x="40" y="92" font-size="24" font-weight="700" fill="#E76F51">Cabookle Budget: 2025-2026</text>
+  <text x="40" y="118" font-size="14" fill="#555">Funded, allocated, committed, and spent, all scoped to one budget year.</text>
 
   <!-- Funding sources -->
   <rect x="40" y="140" width="440" height="200" rx="10" fill="#ffffff" stroke="#E3E7EB"/>
@@ -60,5 +60,5 @@
   <text x="664" y="424" font-size="26" font-weight="700" fill="#333">$2,150 / $2,090</text>
   <text x="664" y="450" font-size="12" fill="#888">Actual spend is 2.8% under estimate</text>
 
-  <text x="480" y="572" text-anchor="middle" font-size="11" fill="#999">Synthetic mockup — all figures are illustrative.</text>
+  <text x="480" y="572" text-anchor="middle" font-size="11" fill="#999">Synthetic mockup, all figures are illustrative.</text>
 </svg>

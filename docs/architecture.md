@@ -60,7 +60,7 @@ flowchart LR
 - **Products are separate applications** that all call the same platform API for identity, session,
   and email.
 - **The platform is the single source of truth** for users, organizations, and entitlements.
-- **External dependencies are narrow** — one email provider, one bot-protection provider, and a book
+- **External dependencies are narrow**: one email provider, one bot-protection provider, and a book
   metadata catalog used only by Library.
 
 ---

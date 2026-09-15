@@ -7,7 +7,7 @@
   <circle cx="68" cy="22" r="6" fill="#28c840"/>
   <rect x="100" y="12" width="760" height="20" rx="10" fill="#F1F3F5"/>
 
-  <text x="40" y="92" font-size="24" font-weight="700" fill="#2A9D8F">Cabookle Library — Smart Search</text>
+  <text x="40" y="92" font-size="24" font-weight="700" fill="#2A9D8F">Cabookle Library: Smart Search</text>
   <text x="40" y="118" font-size="14" fill="#555">Search your collection in plain language. Results come from your shelves, not the open internet.</text>
 
   <!-- Search box -->
@@ -45,5 +45,5 @@
   <rect x="796" y="438" width="108" height="22" rx="11" fill="#E9F6F2"/>
   <text x="850" y="453" text-anchor="middle" font-size="11" fill="#2A9D8F">In your collection</text>
 
-  <text x="480" y="572" text-anchor="middle" font-size="11" fill="#999">Synthetic mockup — all titles and data are illustrative.</text>
+  <text x="480" y="572" text-anchor="middle" font-size="11" fill="#999">Synthetic mockup, all titles and data are illustrative.</text>
 </svg>

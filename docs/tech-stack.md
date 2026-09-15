@@ -1,6 +1,6 @@
 # Technology Stack
 
-This document lists the stack and — more importantly — **why** each choice was made. A stack is only
+This document lists the stack and, more importantly, **why** each choice was made. A stack is only
 interesting when the reasoning is visible, so each entry below pairs a technology with the decision
 that motivated it.
 

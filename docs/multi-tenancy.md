@@ -1,7 +1,7 @@
 # Multi-Tenancy & Data Isolation
 
-Cabookle serves many independent organizations — typically a school or a teacher running their own
-library — inside a single shared application. This document explains the tenancy model and how one
+Cabookle serves many independent organizations, typically a school or a teacher running their own
+library, inside a single shared application. This document explains the tenancy model and how one
 tenant's data is kept isolated from another's.
 
 > This is a conceptual description of the model. It is intentionally **not** a complete schema.
@@ -50,18 +50,18 @@ erDiagram
 
 ### Key entities (conceptual)
 
-- **Organization** — the tenant. Created automatically when the first user verifies their email.
-- **PlatformUser** — a person. A user can belong to more than one organization.
-- **OrganizationMembership** — the join between a user and an organization, carrying a **role**
+- **Organization**: the tenant. Created automatically when the first user verifies their email.
+- **PlatformUser**: a person. A user can belong to more than one organization.
+- **OrganizationMembership**: the join between a user and an organization, carrying a **role**
   (e.g. owner/admin vs. staff) and an "is default" flag for the user's primary organization.
-- **Product** — a fixed catalog of the Cabookle products (`library`, `flow`, `budget`).
-- **ProductEntitlement** — grants an organization access to a product, optionally with an expiry and
+- **Product**: a fixed catalog of the Cabookle products (`library`, `flow`, `budget`).
+- **ProductEntitlement**: grants an organization access to a product, optionally with an expiry and
   per-organization settings.
 
 ### Product-scoped tenancy
 
 Within each product, the organization remains the isolation boundary. For example, a Library tenant
-further owns its collection, students, and circulation records — all ultimately rooted in one
+further owns its collection, students, and circulation records, all ultimately rooted in one
 organization id. Flow scopes everything to a school year *within* an organization, and Budget scopes
 everything to a budget year *within* an organization.
 
@@ -89,7 +89,7 @@ The isolation strategy rests on a small number of invariants:
 
 ### Illustrative invariant (see [code samples](code-samples.md))
 
-The single most important pattern is the **tenant-scoped query guard** — a data-access helper that
+The single most important pattern is the **tenant-scoped query guard**: a data-access helper that
 forces every read to be constrained to the caller's organization. A simplified version appears in the
 code samples; the real implementation is the same idea applied consistently across every product.
 
@@ -105,5 +105,5 @@ strict tenant scoping** keeps operational complexity low while still providing i
 - Isolation is guaranteed in the application layer (scoping + entitlements) rather than by
   infrastructure, which is the right trade-off at this scale.
 
-The cost is that isolation discipline must be upheld in code — which is why the tenant-scoped query
+The cost is that isolation discipline must be upheld in code, which is why the tenant-scoped query
 guard is treated as a first-class invariant, not a convention.
